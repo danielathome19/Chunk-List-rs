@@ -1,6 +1,6 @@
 [![Crate](https://img.shields.io/crates/v/chunklist.svg)](https://crates.io/crates/chunklist)
 [![CI/CT/CD](https://github.com/danielathome19/Chunk-List-rs/actions/workflows/cargo_push.yml/badge.svg)](https://github.com/danielathome19/Chunk-List-rs/actions/workflows/cargo_push.yml)
-[![License](https://img.shields.io/github/license/danielathome19/Chunk-List-rs.svg)](https://github.com/danielathome19/Chunk-List/blob/main/LICENSE.md)
+[![License](https://img.shields.io/github/license/danielathome19/Chunk-List-rs.svg)](https://github.com/danielathome19/Chunk-List-rs/blob/main/LICENSE.md)
 [![DOI](https://zenodo.org/badge/DOI/10.48550/arxiv.2101.00172.svg)](https://doi.org/10.48550/arxiv.2101.00172)
 
 # About
