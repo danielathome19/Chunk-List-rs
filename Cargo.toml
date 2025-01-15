@@ -1,0 +1,19 @@
+[package]
+name = "chunklist"
+version = "0.1.0"
+edition = "2021"
+authors = ["Daniel Szelogowski dan@zerodevelopment.net"]
+description = "A Chunk List is a new, concurrent, chunk-based data structure that is easily modifiable and allows for fast runtime operations."
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/danielathome19/Chunk-List-rs"
+keywords = ["chunklist", "concurrent", "data-structure", "rust"]
+categories = ["data-structures", "concurrency"]
+
+[dependencies]
+rayon = "1.10.0"
+rand = "0.8.5"
+
+# Run tests in release mode
+[profile.test]
+opt-level = 3

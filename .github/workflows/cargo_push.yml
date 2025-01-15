@@ -1,0 +1,30 @@
+name: CI/CT/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build_test_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repo
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      # Set up Rust (stable)
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      # Build & Test
+      - name: Build & Test
+        run: cargo test --verbose
+
+      # Publish to crates.io (only on push to main)
+      - name: Publish to crates.io
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CRATES_IO_TOKEN }}
+        run: cargo publish --verbose
